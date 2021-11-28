@@ -519,6 +519,13 @@
       "address": "0x543ff227f64aa17ea132bf9886cab5db55dcaddf"
     },
     {
+      "title": "DCCCoin",
+      "code": "DCC",
+      "decimal": 18,
+      "type": "bep20",
+      "address": "0xab050c2304ff31e8a1202b463195a6ef680daaee"
+    },
+    {
       "title": "Decentraland",
       "code": "MANA",
       "decimal": 18,
