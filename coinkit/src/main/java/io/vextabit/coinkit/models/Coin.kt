@@ -158,7 +158,7 @@ data class CoinResponse(val version: Int, val coins: List<Coin>){
                         typeString = "${typeString.trim()}|${category.asObject().get("address").asString().trim()}"
 
                         if(typeString.contains("erc20|") || typeString.contains("bep20|") )
-                            typeString = typeString.toLowerCase()
+                            typeString = typeString.toLowerCase(Locale.ROOT)
                     }
                 } else if(category.asObject().get("symbol") != null){
                     if(!category.asObject().get("symbol").isNull)
