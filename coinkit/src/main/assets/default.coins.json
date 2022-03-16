@@ -20,6 +20,12 @@
       "type": "ethereum"
     },
     {
+      "title": "Digest Coin",
+      "code": "DGC",
+      "decimal": 18,
+      "type": "digestSwarmChain"
+    },
+    {
       "title": "Bitcoin Cash",
       "code": "BCH",
       "decimal": 8,

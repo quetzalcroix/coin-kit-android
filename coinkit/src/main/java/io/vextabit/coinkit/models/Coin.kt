@@ -55,6 +55,9 @@ sealed class CoinType: Parcelable {
     object BinanceSmartChain : CoinType()
 
     @Parcelize
+    object DigestSwarmChain : CoinType()
+
+    @Parcelize
     object Zcash : CoinType()
 
     @Parcelize
@@ -92,6 +95,7 @@ sealed class CoinType: Parcelable {
             is Ethereum -> "ethereum"
             is Zcash -> "zcash"
             is BinanceSmartChain -> "binanceSmartChain"
+            is DigestSwarmChain -> "digestSwarmChain"
             is Erc20 -> "erc20|${this.address}"
             is Bep2 -> "bep2|${this.symbol}"
             is Bep20 -> "bep20|${this.address}"
@@ -113,6 +117,7 @@ sealed class CoinType: Parcelable {
                     "ethereum" -> Ethereum
                     "zcash" -> Zcash
                     "binanceSmartChain" -> BinanceSmartChain
+                    "digestSwarmChain" -> DigestSwarmChain
                     else -> Unsupported(chunks[0])
                 }
             } else {
